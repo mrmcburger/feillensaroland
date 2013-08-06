@@ -1,10 +1,13 @@
+<?php
+	session_start();
+?>
 <!DOCTYPE html>
 <html lang="en" class="no-js">
 	<head>
 		<title>Feillens à Roland</title>
 		<meta charset="UTF-8" />
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
 
@@ -27,6 +30,9 @@
 	<body>
 		<div class="container">
 			<ul id="gn-menu" class="gn-menu-main">
+				<?php
+				if(isset($_SESSION['connected']))
+				{?>
 				<li class="gn-trigger">
 					<a class="gn-icon gn-icon-menu"><span>Menu</span></a>
 					<nav class="gn-menu-wrapper">
@@ -42,29 +48,39 @@
 					</nav>
 				</li>
 				<li><a href="#">Gallerie</a></li>
-				<li><a href="#">Upload</a></li>
-				<li><a id="displayLogin" class="codrops-icon codrops-icon-login" href="#"><span>Login</span></a></li>
+				<li><a href="#">Transfert</a></li>
+				<?php } ?>
+				<?php
+					if(!isset($_SESSION['connected']))
+					{
+						echo '<li><a id="displayLogin" class="codrops-icon codrops-icon-login" href="#"><span>Connexion</span></a></li>';
+					}
+					else
+					{
+						echo '<li><a id="logout" class="codrops-icon codrops-icon-login" href="logout.php"><span>Deconnexion</span></a></li>';
+					}
+				?>
 			</ul>
 			<div id="modalLogin">
 				<div class="inner">
-					<form action="#" id="loginForm">
+					<form action="auth.php" id="loginForm" method="post">
 						<div class="controls">
-							<label for="username">Username</label>
-							<input id="username" type="text" name="username" placeholder="Username">
+							<label for="username">Nom d'utilisateur</label>
+							<input id="username" type="text" name="username" placeholder="Nom d'utilisateur">
 						</div>
 						<div class="controls">
-							<label for="password">Password</label>
-							<input id="password" type="password" name="password" placeholder="Password">
+							<label for="password">Mot de passe</label>
+							<input id="password" type="password" name="password" placeholder="Mot de passe">
 						</div>
 						<div class="controls">
-							<button class="btn-flat btn-flat-blue" type="submit">Login</button>
+							<button class="btn-flat btn-flat-blue" type="submit">Connexion</button>
 						</div>
 					</form>
 				</div>
 			</div>
 			<header>
-				<h1><img src="img/ball.png" alt="Feillens à Roland"> Feillens à Roland <span>Toutes les photos de notre journée passée à Roland Garros</span></h1>	
-			</header> 
+				<h1><img src="img/ball.png" alt="Feillens à Roland"> Feillens à Roland <span>Toutes les photos de notre journée passée à Roland Garros</span></h1>
+			</header>
 		</div><!-- /container -->
 		<script src="js/classie.js"></script>
 		<script src="js/gnmenu.js"></script>
