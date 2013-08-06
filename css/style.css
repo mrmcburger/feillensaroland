@@ -1,0 +1,163 @@
+body {
+	font-family: "PT Sans";
+    font-size: 10pt;
+    color: #5F6F81;
+}
+
+@font-face {
+   font-family: "PT Sans";
+   font-style: normal;
+   font-weight: 400;
+   src: local("PT Sans"), local("PTSans-Regular"), url("http://themes.googleusercontent.com/static/fonts/ptsans/v4/LKf8nhXsWg5ybwEGXk8UBQ.woff") format("woff");
+}
+
+/* FORM */
+
+#loginForm {
+    width: auto;
+}
+
+.controls:after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+#loginForm .controls:last-child {
+    margin: 0;
+}
+
+.controls label {
+    float: left;
+    margin-right: 20px;
+}
+
+.controls input {
+    float: right;
+    border: 1px solid #E5E5E5;
+    padding: 8px;
+    font-family: 'PT Sans';
+    font-size: 10pt;
+    color: #58595B;
+    width: 150px;
+}
+
+.controls textarea {
+    float: right;
+    border: 1px solid #E5E5E5;
+    padding: 10px;
+    font-family: 'PT Sans';
+    font-size: 10pt;
+    color: #58595B;
+    width: 150px;
+    height: 150px;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #a3a4a8;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #a3a4a8;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #a3a4a8;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #a3a4a8;
+}
+
+/* BUTTONS */
+
+.btn-flat {
+    padding: 5px 10px;
+    font-size: 10pt;
+    border: 0;
+    color: #FFFFFF;
+    -webkit-transition: all 0.30s ease-in-out 0s;
+    -moz-transition: all 0.30s ease-in-out 0s;
+    -ms-transition: all 0.30s ease-in-out 0s;
+    -o-transition: all 0.30s ease-in-out 0s;
+    transition: all 0.30s ease-in-out 0s;
+    cursor: pointer;
+}
+
+.btn-flat-blue {
+    background-color: #52A8EC;
+}
+
+.btn-flat-green {
+    background-color: #70C67F;
+}
+
+.btn-flat-grey {
+    background-color: #3C454F;
+}
+
+.btn-flat-grey-light {
+    background-color: #F6F6F6;
+    color: #7ebd26;
+}
+
+.btn-flat-red {
+    background-color: #DE6262;
+}
+
+.btn-flat-white {
+    background-color: #FFFFFF;
+    color: #262626;
+    border: 1px solid #CFCFCF;
+}
+
+.btn-flat:hover {
+    background-color: #34495E;
+}
+
+.btn-flat-white:hover {
+    background-color: #FFFFFF;
+}
+
+.btn-none {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* CONTENT */
+
+#modalLogin {
+	width: auto;
+	height: auto;
+	background-color: #FFFFFF;
+	float: right;
+}
+
+.inner {
+	padding: 20px;
+}
+
+.inner > span {
+    color: #74818E;
+    display: block;
+    font-size: 12pt;
+}
+
+.gn-trigger img {
+	margin-top: 15px;
+}
+
+.gn-menu .ip {
+	left: 0;
+    margin-left: 20px;
+    margin-top: 20px;
+    position: absolute;
+}
+
+.gn-menu a {
+	padding: 0 0 0 4em;
+}
