@@ -113,6 +113,10 @@ body {
     background-color: #DE6262;
 }
 
+.btn-flat-brown {
+    background-color: #B9582D;
+}
+
 .btn-flat-white {
     background-color: #FFFFFF;
     color: #262626;
@@ -120,7 +124,7 @@ body {
 }
 
 .btn-flat:hover {
-    background-color: #34495E;
+    background-color: #58595B;
 }
 
 .btn-flat-white:hover {

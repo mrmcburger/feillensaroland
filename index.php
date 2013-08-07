@@ -66,14 +66,14 @@
 					<form action="auth.php" id="loginForm" method="post">
 						<div class="controls">
 							<label for="username">Nom d'utilisateur</label>
-							<input id="username" type="text" name="username" placeholder="Nom d'utilisateur">
+							<input id="username" type="text" name="username" placeholder="Nom d'utilisateur" value="feillens">
 						</div>
 						<div class="controls">
 							<label for="password">Mot de passe</label>
-							<input id="password" type="password" name="password" placeholder="Mot de passe">
+							<input id="password" type="password" name="password" placeholder="Mot de passe" value="feillensaroland">
 						</div>
 						<div class="controls">
-							<button class="btn-flat btn-flat-blue" type="submit">Connexion</button>
+							<button class="btn-flat btn-flat-brown" type="submit">Connexion</button>
 						</div>
 					</form>
 				</div>

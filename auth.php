@@ -71,7 +71,7 @@
                             <input id="password" type="password" name="password" placeholder="Mot de passe">
                         </div>
                         <div class="controls">
-                            <button class="btn-flat btn-flat-blue" type="submit">Connexion</button>
+                            <button class="btn-flat btn-flat-brown" type="submit">Connexion</button>
                         </div>
                     </form>
                 </div>
