@@ -1,7 +1,12 @@
 body {
 	font-family: "PT Sans";
     font-size: 10pt;
-    color: #5F6F81;
+    color: #58595B;
+    background: url(../img/bg.jpg) no-repeat center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 @font-face {

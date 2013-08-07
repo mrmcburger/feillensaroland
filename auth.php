@@ -27,22 +27,63 @@
     }
     else
     {
-        echo 'Mauvaise combinaison login/mot de passe';
 ?>
-<br /><br />
-<form id="loginForm" method="post">
-    <div class="controls">
-        <label for="username">Nom d'utilisateur</label>
-        <input id="username" type="text" name="username" placeholder="Nom d'utilisateur">
-    </div>
-    <div class="controls">
-        <label for="password">Mot de passe</label>
-        <input id="password" type="password" name="password" placeholder="Mot de passe">
-    </div>
-    <div class="controls">
-        <button class="btn-flat btn-flat-blue" type="submit">Login</button>
-    </div>
-</form>
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <title>Feillens à Roland</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+
+        <!-- css -->
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/component.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/font-awesome-ie7.min.css" />
+
+        <!-- favicon -->
+        <link rel="shortcut icon" href="../favicon.ico">
+
+        <!-- js -->
+        <script src="js/modernizr.custom.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+        <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <ul id="gn-menu" class="gn-menu-main">
+                <li><a id="displayLogin" class="codrops-icon codrops-icon-login" href="#"><span>Connexion</span></a></li>
+            </ul>
+            <div id="modalLogin">
+                <div class="inner">
+                    <form action="auth.php" id="loginForm" method="post">
+                        <div class="controls">
+                            <label for="username">Nom d'utilisateur</label>
+                            <input id="username" type="text" name="username" placeholder="Nom d'utilisateur">
+                        </div>
+                        <div class="controls">
+                            <label for="password">Mot de passe</label>
+                            <input id="password" type="password" name="password" placeholder="Mot de passe">
+                        </div>
+                        <div class="controls">
+                            <button class="btn-flat btn-flat-blue" type="submit">Connexion</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <header>
+                <h1><img src="img/ball.png" alt="Feillens à Roland"> Connectez-vous à l'application <span><?php echo 'Mauvaise combinaison login/mot de passe, veuillez vous reconnecter'; ?></span></h1>
+            </header>
+        </div><!-- /container -->
+        <script src="js/classie.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
 <?php
     }
 ?>
