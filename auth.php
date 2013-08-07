@@ -3,7 +3,7 @@
 
     $username = $_POST['username'];
     $password = $_POST['password'];
-    $request = "SELECT * FROM auth WHERE nickname='$username' AND password='$password'";
+    $request = 'SELECT * FROM auth WHERE nickname=:nickname AND password=:password';
 
     try
     {
@@ -16,8 +16,10 @@
     }
 
     $prepared_request = $pdo->prepare($request);
+    $prepared_request->bindParam(':nickname', $username);
+    $prepared_request->bindParam(':password', $password);
     $prepared_request ->execute();
-
+    echo $prepared_request->rowCount();
     if($prepared_request->rowCount())
     {
         # Successfull auth
