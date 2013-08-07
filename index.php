@@ -48,7 +48,7 @@
 					</nav>
 				</li>
 				<li><a href="#">Gallerie</a></li>
-				<li><a href="#">Transfert</a></li>
+				<li><a href="upload.php">Transfert</a></li>
 				<?php } ?>
 				<?php
 					if(!isset($_SESSION['connected']))
@@ -66,14 +66,14 @@
 					<form action="auth.php" id="loginForm" method="post">
 						<div class="controls">
 							<label for="username">Nom d'utilisateur</label>
-							<input id="username" type="text" name="username" placeholder="Nom d'utilisateur" value="feillens">
+							<input id="username" type="text" name="username" placeholder="Nom d'utilisateur">
 						</div>
 						<div class="controls">
 							<label for="password">Mot de passe</label>
-							<input id="password" type="password" name="password" placeholder="Mot de passe" value="feillensaroland">
+							<input id="password" type="password" name="password" placeholder="Mot de passe">
 						</div>
 						<div class="controls">
-							<button class="btn-flat btn-flat-brown" type="submit">Connexion</button>
+							<button class="btn-flat btn-flat-blue" type="submit">Connexion</button>
 						</div>
 					</form>
 				</div>
