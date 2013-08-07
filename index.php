@@ -47,7 +47,7 @@
 						</div>
 					</nav>
 				</li>
-				<li><a href="#">Gallerie</a></li>
+				<li><a href="gallery.php">Gallerie</a></li>
 				<li><a href="upload.php">Transfert</a></li>
 				<?php } ?>
 				<?php
