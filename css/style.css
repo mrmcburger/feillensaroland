@@ -23,6 +23,10 @@ body {
     width: auto;
 }
 
+#uploadForm {
+	width: 340px;
+}
+
 .controls:after {
     content: ".";
     clear: both;
@@ -35,7 +39,7 @@ body {
     margin-bottom: 20px;
 }
 
-#loginForm .controls:last-child {
+form .controls:last-child {
     margin: 0;
 }
 
@@ -46,12 +50,12 @@ body {
 
 .controls input {
     float: right;
-    border: 1px solid #E5E5E5;
     padding: 8px;
     font-family: 'PT Sans';
     font-size: 10pt;
-    color: #58595B;
     width: 150px;
+    border: 1px solid #E5E5E5;
+    color: #58595B;
 }
 
 .controls textarea {
@@ -63,6 +67,10 @@ body {
     color: #58595B;
     width: 150px;
     height: 150px;
+}
+
+.wAuto {
+	width: auto !important;
 }
 
 ::-webkit-input-placeholder { /* WebKit browsers */
@@ -78,19 +86,77 @@ body {
     color:    #a3a4a8;
 }
 
+/* CONTENT */
+
+#modalLogin {
+	width: auto;
+	height: auto;
+	background-color: #FFFFFF;
+	float: right;
+	color: #58595B;
+}
+
+.inner {
+	padding: 20px;
+}
+
+.inner > span {
+    color: #74818E;
+    display: block;
+    font-size: 12pt;
+}
+
+.gn-trigger img {
+	margin-top: 15px;
+}
+
+.gn-menu .ip {
+	left: 0;
+    margin-left: 20px;
+    margin-top: 20px;
+    position: absolute;
+}
+
+.gn-menu a {
+	padding: 0 0 0 4em;
+}
+
+#modalUpload {
+	background-color: #FFFFFF;
+    margin: 50px auto 0;
+    padding: 20px;
+    width: 400px;
+    -webkit-box-shadow: 1px 1px 20px #000000;
+    -moz-box-shadow: 1px 1px 20px #000000;
+    box-shadow: 1px 1px 20px #000000;
+}
+
+.notif {
+	margin-bottom: 20px;
+}
+
+.warning {
+	color: #FF0000;
+}
+
+.success {
+	color: #7ebd26;
+}
+
 /* BUTTONS */
 
 .btn-flat {
     padding: 5px 10px;
     font-size: 10pt;
     border: 0;
-    color: #FFFFFF;
+    color: #FFFFFF !important;
     -webkit-transition: all 0.30s ease-in-out 0s;
     -moz-transition: all 0.30s ease-in-out 0s;
     -ms-transition: all 0.30s ease-in-out 0s;
     -o-transition: all 0.30s ease-in-out 0s;
     transition: all 0.30s ease-in-out 0s;
     cursor: pointer;
+    width: auto !important;
 }
 
 .btn-flat-blue {
@@ -136,38 +202,4 @@ body {
     background: none;
     border: none;
     cursor: pointer;
-}
-
-/* CONTENT */
-
-#modalLogin {
-	width: auto;
-	height: auto;
-	background-color: #FFFFFF;
-	float: right;
-}
-
-.inner {
-	padding: 20px;
-}
-
-.inner > span {
-    color: #74818E;
-    display: block;
-    font-size: 12pt;
-}
-
-.gn-trigger img {
-	margin-top: 15px;
-}
-
-.gn-menu .ip {
-	left: 0;
-    margin-left: 20px;
-    margin-top: 20px;
-    position: absolute;
-}
-
-.gn-menu a {
-	padding: 0 0 0 4em;
 }
