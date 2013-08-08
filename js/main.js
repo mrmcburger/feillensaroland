@@ -9,7 +9,12 @@ $(function() {
 	});
 
 	// PAGINATION LISTS
+	var len = document.images.length,
+		pageNumber = len / 20,
+		pageNumberInt = Math.floor(pageNumber);
+
 	$('.pag-objects').pajinate({
-		items_per_page: 20
+		items_per_page: 20,
+		start_page: pageNumberInt
 	});
 });
