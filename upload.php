@@ -24,7 +24,7 @@
         <link rel="stylesheet" type="text/css" href="css/font-awesome-ie7.min.css" />
 
         <!-- favicon -->
-        <link rel="shortcut icon" href="../favicon.ico">
+        <link rel="shortcut icon" href="img/favicon.png">
 
         <!-- js -->
         <script src="js/modernizr.custom.js"></script>
