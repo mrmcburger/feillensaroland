@@ -9,7 +9,7 @@ $(function() {
 	});
 
 	// PAGINATION LISTS
-	var len = document.images.length,
+	var len = document.getElementById('modalGallery').getElementsByTagName('img').length,
 		pageNumber = len / 20,
 		pageNumberInt = Math.floor(pageNumber);
 
