@@ -56,10 +56,19 @@
                 <div class="pag-objects">
                     <div class="objects-list clear-fix">
                         <?php
-                            $matches = array(); 
+                            $matches = array();
                             $filesArray = scandir('pictures');
+                            $sortedFilesArray = array();
                             array_shift($filesArray) && array_shift($filesArray);
+
                             foreach($filesArray as $file)
+                            {
+                                $sortedFilesArray[$file] = filemtime('pictures/'.$file);
+                            }
+
+                            asort($sortedFilesArray);
+
+                            foreach($sortedFilesArray as $file => $timestamp)
                             {
                                 if(preg_match('#(.*)_mini$#', $file, $matches))
                                 {
