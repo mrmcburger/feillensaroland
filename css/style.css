@@ -10,6 +10,25 @@ body {
 	margin: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
+hr {
+    background-color: #e5e3d4;
+    border: 0 none;
+    color: #e5e3d4;
+    height: 1px;
+}
+
+.clear-fix:after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
 @font-face {
    font-family: "PT Sans";
    font-style: normal;
@@ -143,6 +162,27 @@ form .controls:last-child {
 	color: #7ebd26;
 }
 
+#modalGallery {
+	background-color: #FFFFFF;
+    margin: 50px;
+    padding: 20px;
+    -webkit-box-shadow: 1px 1px 20px #000000;
+    -moz-box-shadow: 1px 1px 20px #000000;
+    box-shadow: 1px 1px 20px #000000;
+}
+
+.picture {
+	width: auto;
+	float: left;
+	margin-right: 5px;
+}
+
+.picture img:hover {
+    -webkit-box-shadow: 1px 1px 5px #000000;
+    -moz-box-shadow: 1px 1px 5px #000000;
+    box-shadow: 1px 1px 5px #000000;
+}
+
 /* BUTTONS */
 
 .btn-flat {
@@ -202,4 +242,36 @@ form .controls:last-child {
     background: none;
     border: none;
     cursor: pointer;
+}
+
+/* PAGINATION */
+
+.page_navigation {
+    padding-top: 10px;
+}
+
+.page_navigation a {
+    padding: 2px 5px;
+    font-size: 10pt;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    -webkit-transition: all 0.30s ease-in-out 0s;
+    -moz-transition: all 0.30s ease-in-out 0s;
+    -ms-transition: all 0.30s ease-in-out 0s;
+    -o-transition: all 0.30s ease-in-out 0s;
+    transition: all 0.30s ease-in-out 0s;
+    cursor: pointer;
+    background-color: #E5E5E5;
+}
+
+.page_navigation a:hover {
+    background-color: #58595B;
+}
+
+.page_navigation a.active_page,a.next_link,a.last_link,a.first_link,a.previous_link {
+    background-color: #58595B;
+}
+
+.page_navigation a.no_more {
+    background-color: #E5E5E5;
 }

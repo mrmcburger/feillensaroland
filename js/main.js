@@ -7,4 +7,9 @@ $(function() {
 		$("#modalLogin").slideToggle();
 		$("#displayLogin").toggleClass('open');
 	});
+
+	// PAGINATION LISTS
+	$('.pag-objects').pajinate({
+		items_per_page: 20
+	});
 });

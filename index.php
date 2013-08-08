@@ -38,16 +38,14 @@
 					<nav class="gn-menu-wrapper">
 						<div class="gn-scroller">
 							<ul class="gn-menu">
-								<li><a href="#"><i class="icon-picture ip"></i>Photos</a></li>
-								<li><a href="#"><i class="icon-youtube ip"></i>Vidéos</a></li>
+								<li><a href="gallery.php"><i class="icon-picture ip"></i>Photos</a></li>
 								<li><a href="http://www.tennis-club-de-feillens.fr" target="_blank"><i class="icon-link ip"></i>Site web</a></li>
 								<li><a href="https://www.facebook.com/groups/255325817850570" target="_blank"><i class="icon-facebook ip"></i>Facebook</a></li>
-								<li><a href="#"><i class="icon-question ip"></i>Help</a></li>
 							</ul>
 						</div>
 					</nav>
 				</li>
-				<li><a href="gallery.php">Gallerie</a></li>
+				<li><a href="gallery.php">Galerie</a></li>
 				<li><a href="upload.php">Transfert</a></li>
 				<?php } ?>
 				<?php
@@ -66,11 +64,11 @@
 					<form action="auth.php" id="loginForm" method="post">
 						<div class="controls">
 							<label for="username">Nom d'utilisateur</label>
-							<input id="username" type="text" name="username" placeholder="Nom d'utilisateur" value="feillens">
+							<input id="username" type="text" name="username" placeholder="Nom d'utilisateur">
 						</div>
 						<div class="controls">
 							<label for="password">Mot de passe</label>
-							<input id="password" type="password" name="password" placeholder="Mot de passe" value="feillensaroland">
+							<input id="password" type="password" name="password" placeholder="Mot de passe">
 						</div>
 						<div class="controls">
 							<button class="btn-flat btn-flat-brown" type="submit">Connexion</button>

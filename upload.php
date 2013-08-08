@@ -39,16 +39,14 @@
                     <nav class="gn-menu-wrapper">
                         <div class="gn-scroller">
                             <ul class="gn-menu">
-                                <li><a href="#"><i class="icon-picture ip"></i>Photos</a></li>
-                                <li><a href="#"><i class="icon-youtube ip"></i>Vidéos</a></li>
+                                <li><a href="gallery.php"><i class="icon-picture ip"></i>Photos</a></li>
                                 <li><a href="http://www.tennis-club-de-feillens.fr" target="_blank"><i class="icon-link ip"></i>Site web</a></li>
                                 <li><a href="https://www.facebook.com/groups/255325817850570" target="_blank"><i class="icon-facebook ip"></i>Facebook</a></li>
-                                <li><a href="#"><i class="icon-question ip"></i>Help</a></li>
                             </ul>
                         </div>
                     </nav>
                 </li>
-                <li><a href="gallery.php">Gallerie</a></li>
+                <li><a href="gallery.php">Galerie</a></li>
                 <li><a href="upload.php">Transfert</a></li>
                 <li><a id="logout" class="codrops-icon codrops-icon-login" href="logout.php"><span>Deconnexion</span></a></li>
             </ul>
