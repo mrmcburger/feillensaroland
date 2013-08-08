@@ -5,7 +5,6 @@
         header('Location: index.php');
     }
 ?>
-
 <!DOCTYPE html>
 <html lang="en" class="no-js">
     <head>
@@ -52,16 +51,20 @@
                 <li><a href="upload.php">Transfert</a></li>
                 <li><a id="logout" class="codrops-icon codrops-icon-login" href="logout.php"><span>Deconnexion</span></a></li>
             </ul>
-            <h1><img src="img/ball.png" alt="Feillens à Roland"> Transférer une photo</h1>
+            <h1><img src="img/ball.png" alt="Feillens à Roland"> Galerie de photos</h1>
             <div id="modalGallery">
                 <div class="pag-objects">
                     <div class="objects-list clear-fix">
                         <?php
+                            $matches = array(); 
                             $filesArray = scandir('pictures');
                             array_shift($filesArray) && array_shift($filesArray);
                             foreach($filesArray as $file)
                             {
-                                echo "<a href='pictures/$file'><div class='picture'><img src='pictures/$file' height='150'></div></a>";
+                                if(preg_match('#(.*)_mini$#', $file, $matches))
+                                {
+                                    echo "<a href='pictures/$matches[1]'><div class='picture'><img src='pictures/$file'></div></a>";
+                                }
                             }
                         ?>
                     </div>
