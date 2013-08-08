@@ -1,8 +1,23 @@
 <?php
+    session_start();
     include 'db.ini';
 
-    $username = $_POST['username'];
-    $password = $_POST['password'];
+    if(isset($_SESSION['connected']))
+    {
+        header('Location: index.php');
+    }
+
+    if(isset($_POST['username']) && isset($_POST['password']))
+    {
+        $username = $_POST['username'];
+        $password = $_POST['password'];
+    }
+    else
+    {
+        $username = '';
+        $password = '';
+    }
+
     $request = 'SELECT * FROM auth WHERE nickname=:nickname AND password=:password';
 
     try
@@ -19,11 +34,10 @@
     $prepared_request->bindParam(':nickname', $username);
     $prepared_request->bindParam(':password', $password);
     $prepared_request ->execute();
-    echo $prepared_request->rowCount();
+
     if($prepared_request->rowCount())
     {
         # Successfull auth
-        session_start();
         $_SESSION['connected'] = true;
         header('Location: index.php');
     }
