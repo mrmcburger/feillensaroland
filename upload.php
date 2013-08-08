@@ -1,5 +1,6 @@
 <?php
     session_start();
+    include 'functions.php';
     if(!isset($_SESSION['connected']))
     {
         header('Location: index.php');
@@ -68,7 +69,7 @@
                         else
                         {
                             $maxsize = 10485760;
-                            $valid_extensions = array('jpg' , 'jpeg' , 'gif' , 'png', 'bmp');
+                            $valid_extensions = array('jpg' , 'jpeg' , 'gif' , 'png');
 
                             if ($_FILES['picture']['size'] > $maxsize)
                             {
@@ -96,7 +97,10 @@
                             {
                                $result = move_uploaded_file($_FILES['picture']['tmp_name'], 'pictures/'.$_FILES['picture']['name']);
                                 if ($result)
+                                {
                                     echo '<div class="notif success">Transfert réussi ! Vous pouvez dès à présent envoyer une autre photo.</div>';
+                                    createThumbs('pictures/'.$_FILES['picture']['name']);
+                                }
                             }
                         }
                     }
