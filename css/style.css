@@ -198,7 +198,7 @@ form .controls:last-child {
 
 #modalPhoto img {
     background-color: #FFFFFF;
-    max-height: 800px;
+    max-height: 650px;
     -webkit-box-shadow: 1px 1px 20px #000000;
     -moz-box-shadow: 1px 1px 20px #000000;
     box-shadow: 1px 1px 20px #000000;
