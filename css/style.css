@@ -1,13 +1,13 @@
 body {
-	font-family: "PT Sans";
+    font-family: "PT Sans";
     font-size: 10pt;
     color: #58595B;
     background: url(../img/bg.jpg) no-repeat center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	margin: 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0;
 }
 
 a {
@@ -43,7 +43,7 @@ hr {
 }
 
 #uploadForm {
-	width: 340px;
+    width: 340px;
 }
 
 .controls:after {
@@ -89,7 +89,7 @@ form .controls:last-child {
 }
 
 .wAuto {
-	width: auto !important;
+    width: auto !important;
 }
 
 ::-webkit-input-placeholder { /* WebKit browsers */
@@ -108,15 +108,15 @@ form .controls:last-child {
 /* CONTENT */
 
 #modalLogin {
-	width: auto;
-	height: auto;
-	background-color: #FFFFFF;
-	float: right;
-	color: #58595B;
+    width: auto;
+    height: auto;
+    background-color: #FFFFFF;
+    float: right;
+    color: #58595B;
 }
 
 .inner {
-	padding: 20px;
+    padding: 20px;
 }
 
 .inner > span {
@@ -126,22 +126,22 @@ form .controls:last-child {
 }
 
 .gn-trigger img {
-	margin-top: 15px;
+    margin-top: 15px;
 }
 
 .gn-menu .ip {
-	left: 0;
+    left: 0;
     margin-left: 20px;
     margin-top: 20px;
     position: absolute;
 }
 
 .gn-menu a {
-	padding: 0 0 0 4em;
+    padding: 0 0 0 4em;
 }
 
 #modalUpload {
-	background-color: #FFFFFF;
+    background-color: #FFFFFF;
     margin: 50px auto 0;
     padding: 20px;
     width: 400px;
@@ -151,19 +151,19 @@ form .controls:last-child {
 }
 
 .notif {
-	margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .warning {
-	color: #FF0000;
+    color: #FF0000;
 }
 
 .success {
-	color: #7ebd26;
+    color: #7ebd26;
 }
 
 #modalGallery {
-	background-color: #FFFFFF;
+    background-color: #FFFFFF;
     margin: 50px;
     padding: 20px;
     -webkit-box-shadow: 1px 1px 20px #000000;
@@ -172,15 +172,62 @@ form .controls:last-child {
 }
 
 .picture {
-	width: auto;
-	float: left;
-	margin-right: 5px;
+    width: auto;
+    float: left;
+    margin-right: 5px;
+    cursor: pointer;
 }
 
 .picture img:hover {
     -webkit-box-shadow: 1px 1px 5px #000000;
     -moz-box-shadow: 1px 1px 5px #000000;
     box-shadow: 1px 1px 5px #000000;
+}
+
+#modalPhoto {
+    position:absolute;
+    left:0;
+    right:0;
+    top: 0;
+    text-align: center;
+    margin-top: 100px;
+    z-index: 100;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#modalPhoto img {
+    background-color: #FFFFFF;
+    max-height: 800px;
+    -webkit-box-shadow: 1px 1px 20px #000000;
+    -moz-box-shadow: 1px 1px 20px #000000;
+    box-shadow: 1px 1px 20px #000000;
+}
+
+#modalPhoto .icon-remove {
+    position: absolute;
+    width: 25px;
+    left: 0;
+    top: 0;
+    color: #000000;
+    padding: 0px 3px;
+    margin-top: 2px;
+    margin-left: 2px;
+    cursor: pointer;
+}
+
+.modal-backdrop {
+    background-color: #000000;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 50;
+}
+
+.modal-backdrop, .modal-backdrop.fade.in {
+    opacity: 0.8;
 }
 
 /* BUTTONS */

@@ -72,7 +72,7 @@
                             {
                                 if(preg_match('#(.*)_mini$#', $file, $matches))
                                 {
-                                    echo "<a href='pictures/$matches[1]'><div class='picture'><img src='pictures/$file'></div></a>";
+                                    echo "<div class='picture'><img src='pictures/$file'></div>";
                                 }
                             }
                         ?>
@@ -81,7 +81,20 @@
                     <div class="page_navigation"></div>
                 </div>
             </div>
+            <div id="modalPhoto">
+                <i class="icon-remove icon-large"></i>
+                <?php
+                    foreach($sortedFilesArray as $file => $timestamp)
+                    {
+                        if(preg_match('#(.*)_mini$#', $file, $matches))
+                        {
+                            echo "<img src='pictures/$matches[1]' class='modalPicture'>";
+                        }
+                    }
+                ?>
+            </div>
         </div><!-- /container -->
+        <div class="modal-backdrop fade in"></div>
         <script src="js/classie.js"></script>
         <script src="js/gnmenu.js"></script>
         <script src="js/main.js"></script>

@@ -1,6 +1,9 @@
 $(function() {
 	// INITIAL STATE
 	$("#modalLogin").hide();
+	$("#modalPhoto .modalPicture").hide();
+	$("#modalPhoto .icon-remove").hide();
+	$(".modal-backdrop").hide();
 
 	// LOGIN
 	$("#displayLogin").click(function() {
@@ -16,5 +19,34 @@ $(function() {
 	$('.pag-objects').pajinate({
 		items_per_page: 20,
 		start_page: pageNumberInt
+	});
+
+	// MODAL PHOTO
+	$("#modalGallery .picture").on('click', function() {
+		var tab = $(this),
+			index = tab.index(),
+			content = $("#modalPhoto .modalPicture").eq(index),
+			contents = content.siblings();
+
+		var xWidth =  content.width();
+		$("#modalPhoto").width(xWidth);
+
+		content.fadeIn();
+		$("#modalPhoto .icon-remove").fadeIn();
+		$(".modal-backdrop").fadeIn();
+	});
+
+	$("#modalPhoto .icon-remove").on('click', function() {
+		$("#modalPhoto .modalPicture").hide();
+		$("#modalPhoto .icon-remove").hide();
+		$(".modal-backdrop").fadeOut();
+	});
+
+	$(document).on('keydown', function (e) {
+	    if (e.keyCode === 27) {
+	        $("#modalPhoto .modalPicture").hide();
+			$("#modalPhoto .icon-remove").hide();
+			$(".modal-backdrop").fadeOut();
+	    }
 	});
 });
