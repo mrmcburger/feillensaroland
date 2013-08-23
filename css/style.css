@@ -231,6 +231,13 @@ form .controls:last-child {
     filter:alpha(opacity=80);
 }
 
+#modalHelp {
+    background-color: #FFFFFF;
+    box-shadow: 1px 1px 20px #000000;
+    margin: 50px 200px;
+    padding: 20px;
+}
+
 /* BUTTONS */
 
 .btn-flat {

@@ -41,7 +41,7 @@
                         <div class="gn-scroller">
                             <ul class="gn-menu">
                                 <li><a href="gallery.php"><i class="icon-picture ip"></i>Photos</a></li>
-                                <li><a href="http://www.tennis-club-de-feillens.fr" target="_blank"><i class="icon-link ip"></i>Site web</a></li>
+                                <li><a href="http://www.tennis-club-de-feillens.fr" target="_blank"><i class="icon-link ip"></i>Site web du TC Feillens</a></li>
                                 <li><a href="https://www.facebook.com/groups/255325817850570" target="_blank"><i class="icon-facebook ip"></i>Facebook</a></li>
                             </ul>
                         </div>
@@ -49,6 +49,7 @@
                 </li>
                 <li><a href="gallery.php">Galerie</a></li>
                 <li><a href="upload.php">Transfert</a></li>
+                <li><a href="help.php">Aide</a></li>
                 <li><a id="logout" class="codrops-icon codrops-icon-login" href="logout.php"><span>Deconnexion</span></a></li>
             </ul>
             <h1><img src="img/ball.png" alt="Feillens à Roland"> Galerie de photos</h1>

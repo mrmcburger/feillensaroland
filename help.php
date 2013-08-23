@@ -1,5 +1,9 @@
 <?php
-	session_start();
+    session_start();
+    if(!isset($_SESSION['connected']))
+    {
+        header('Location: index.php');
+    }
 ?>
 <!DOCTYPE html>
 <html lang="en" class="no-js">
@@ -30,9 +34,6 @@
 	<body>
 		<div class="container">
 			<ul id="gn-menu" class="gn-menu-main">
-				<?php
-				if(isset($_SESSION['connected']))
-				{?>
 				<li class="gn-trigger">
 					<a class="gn-icon gn-icon-menu"><span>Menu</span></a>
 					<nav class="gn-menu-wrapper">
@@ -48,38 +49,15 @@
 				<li><a href="gallery.php">Galerie</a></li>
 				<li><a href="upload.php">Transfert</a></li>
 				<li><a href="help.php">Aide</a></li>
-				<?php } ?>
-				<?php
-					if(!isset($_SESSION['connected']))
-					{
-						echo '<li><a id="displayLogin" class="codrops-icon codrops-icon-login" href="#"><span>Connexion</span></a></li>';
-					}
-					else
-					{
-						echo '<li><a id="logout" class="codrops-icon codrops-icon-login" href="logout.php"><span>Deconnexion</span></a></li>';
-					}
-				?>
+				<li><a id="logout" class="codrops-icon codrops-icon-login" href="logout.php"><span>Deconnexion</span></a></li>
 			</ul>
-			<div id="modalLogin">
-				<div class="inner">
-					<form action="auth.php" id="loginForm" method="post">
-						<div class="controls">
-							<label for="username">Nom d'utilisateur</label>
-							<input id="username" type="text" name="username" placeholder="Nom d'utilisateur">
-						</div>
-						<div class="controls">
-							<label for="password">Mot de passe</label>
-							<input id="password" type="password" name="password" placeholder="Mot de passe">
-						</div>
-						<div class="controls">
-							<button class="btn-flat btn-flat-brown" type="submit">Connexion</button>
-						</div>
-					</form>
-				</div>
+			<h1><img src="img/ball.png" alt="Feillens à Roland"> Aide</h1>
+			<div id="modalHelp">
+				<span><strong>Comment télécharger une photo depuis la galerie ?</strong></span>
+				<p>C'est très simple !<br />
+				Il vous suffit de vous rendre sur la page Galerie, puis de cliquer sur la photo que vous souhaitez télécharger. Un aperçu de la photo apparaît, il vous suffit alors de faire un clic droit dessus, et de cliquer sur "Enregistrer l'image sous...".
+				Et le tour est joué !</p>
 			</div>
-			<header>
-				<h1><img src="img/ball.png" alt="Feillens à Roland"> Feillens à Roland <span>Toutes les photos de notre journée passée à Roland Garros</span></h1>
-			</header>
 		</div><!-- /container -->
 		<script src="js/classie.js"></script>
 		<script src="js/gnmenu.js"></script>
