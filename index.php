@@ -47,6 +47,7 @@
 				</li>
 				<li><a href="gallery.php">Galerie</a></li>
 				<li><a href="upload.php">Transfert</a></li>
+				<li><a href="videos.php">Vidéos</a></li>
 				<li><a href="help.php">Aide</a></li>
 				<?php } ?>
 				<?php

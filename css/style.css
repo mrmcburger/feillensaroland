@@ -162,6 +162,10 @@ form .controls:last-child {
     color: #7ebd26;
 }
 
+.legend {
+    font-size: 8pt;
+}
+
 #modalGallery {
     background-color: #FFFFFF;
     margin: 50px;

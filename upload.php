@@ -49,6 +49,7 @@
                 </li>
                 <li><a href="gallery.php">Galerie</a></li>
                 <li><a href="upload.php">Transfert</a></li>
+                <li><a href="videos.php">Vidéos</a></li>
                 <li><a href="help.php">Aide</a></li>
                 <li><a id="logout" class="codrops-icon codrops-icon-login" href="logout.php"><span>Deconnexion</span></a></li>
             </ul>
@@ -115,6 +116,10 @@
                         <button class="btn-flat btn-flat-brown" type="submit">Envoyer</button>
                     </div>
                 </form>
+                <hr>
+                <div class="legend">
+                    * Permet la mise à dispo de photos sur le site que les adhérents pourront ensuite télécharger
+                </div>
             </div>
         </div><!-- /container -->
         <script src="js/classie.js"></script>

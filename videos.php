@@ -52,14 +52,29 @@
 				<li><a href="help.php">Aide</a></li>
 				<li><a id="logout" class="codrops-icon codrops-icon-login" href="logout.php"><span>Deconnexion</span></a></li>
 			</ul>
-			<h1><img src="img/ball.png" alt="Feillens à Roland"> Aide</h1>
-			<div id="modalHelp">
-				<span><strong>Comment transférer une photo sur le site ?</strong></span>
-				<p>Pour cela, se rendre sur la page transfert du site, et vous pourrez alors envoyer vos photos une à une en allant les chercher directement sur votre PC.</p>
-				<span><strong>Comment télécharger une photo depuis la galerie ?</strong></span>
-				<p>C'est très simple !<br />
-				Il vous suffit de vous rendre sur la page Galerie, puis de cliquer sur la photo que vous souhaitez télécharger. Un aperçu de la photo apparaît, il vous suffit alors de faire un clic droit dessus, et de cliquer sur "Enregistrer l'image sous...".
-				Et le tour est joué !</p>
+			<h1><img src="img/ball.png" alt="Feillens à Roland"> Vidéos</h1>
+			<div id="modalGallery">
+				<span><strong>Vidéos BNP</strong></span>
+				<hr>
+				<div class="clear-fix">
+					<iframe width="560" height="315" src="//www.youtube.com/embed/vMtRP6-34jo" frameborder="0" allowfullscreen></iframe>
+				</div>
+				<span><strong>Vidéos du concours</strong></span>
+				<hr>
+				<div class="clear-fix">
+					<iframe width="560" height="315" src="//www.youtube.com/embed/R6PZGfxlSv0" frameborder="0" allowfullscreen></iframe>
+					<iframe width="560" height="315" src="//www.youtube.com/embed/q1X0ov9Ri3g" frameborder="0" allowfullscreen></iframe>
+					<iframe width="560" height="315" src="//www.youtube.com/embed/WI9849LrRS4" frameborder="0" allowfullscreen></iframe>
+					<iframe width="560" height="315" src="//www.youtube.com/embed/bRJHFo3JLgA" frameborder="0" allowfullscreen></iframe>
+					<iframe width="560" height="315" src="//www.youtube.com/embed/qNk2zYeYZp4" frameborder="0" allowfullscreen></iframe>
+					<iframe width="560" height="315" src="//www.youtube.com/embed/kyhvQY7QTGg" frameborder="0" allowfullscreen></iframe>
+					<iframe width="560" height="315" src="//www.youtube.com/embed/29CUgDEfjxc" frameborder="0" allowfullscreen></iframe>
+					<iframe width="560" height="315" src="//www.youtube.com/embed/p5pIlIUm-Pg" frameborder="0" allowfullscreen></iframe>
+					<iframe width="560" height="315" src="//www.youtube.com/embed/vK_uS9Wt4-8" frameborder="0" allowfullscreen></iframe>
+					<iframe width="560" height="315" src="//www.youtube.com/embed/_h-WIUcr0Og" frameborder="0" allowfullscreen></iframe>
+					<iframe width="560" height="315" src="//www.youtube.com/embed/zQuATzxl9vE" frameborder="0" allowfullscreen></iframe>
+					<iframe width="560" height="315" src="//www.youtube.com/embed/PqlHxU2VOA4" frameborder="0" allowfullscreen></iframe>
+				</div>
 			</div>
 		</div><!-- /container -->
 		<script src="js/classie.js"></script>
